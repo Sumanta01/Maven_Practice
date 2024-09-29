@@ -1,5 +1,4 @@
 package com.sumanta;
-
 import com.sumanta.student.Address;
 import com.sumanta.student.Student;
 import com.sumanta.studentRepo.StudentRepository;
@@ -12,7 +11,8 @@ public class App
 {
     public static void main( String[] args )
     {
-      
+        
+        System.out.println("Hello World!");
         StudentRepository studentRepository=new StudentRepository();
 
         Student student1=new Student(101, "Sumanta Swain", "swainsumanta01@gmail.com", new Address("Bhubaneswar", "Odisha", "India", "751024"));
@@ -43,6 +43,7 @@ public class App
         System.out.println("\nDeleting Student with Id 202: ");
         studentRepository.deleteStudentId(202);
         studentRepository.getAllStudents().forEach(System.out::println);
+
 
 
 
